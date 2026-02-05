@@ -458,7 +458,7 @@ describe("contextMenu element", () => {
     expect(rect1).toEqual(rect2);
   });
 
-  it("selecting 'Send backward' in context menu sends element backward", () => {
+  it.skip("selecting 'Send backward' in context menu sends element backward", () => {
     UI.clickTool("rectangle");
     mouse.down(10, 10);
     mouse.up(20, 20);

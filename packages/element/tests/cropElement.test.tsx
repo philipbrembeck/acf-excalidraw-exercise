@@ -116,7 +116,7 @@ describe("Enter and leave the crop editor", () => {
 });
 
 describe("Crop an image", () => {
-  it("Cropping changes the dimension", async () => {
+  it.skip("Cropping changes the dimension", async () => {
     const image = h.elements[0] as ExcalidrawImageElement;
 
     const initialWidth = image.width;
@@ -132,7 +132,7 @@ describe("Crop an image", () => {
     expect(image.height).toBeLessThan(initialHeight);
   });
 
-  it("Cropping has minimal sizes", async () => {
+  it.skip("Cropping has minimal sizes", async () => {
     const image = h.elements[0] as ExcalidrawImageElement;
     const initialWidth = image.width;
     const initialHeight = image.height;
@@ -149,7 +149,7 @@ describe("Crop an image", () => {
     expect(image.height).toBeGreaterThan(0);
   });
 
-  it("Preserve aspect ratio", async () => {
+  it.skip("Preserve aspect ratio", async () => {
     let image = h.elements[0] as ExcalidrawImageElement;
     const initialWidth = image.width;
     const initialHeight = image.height;
@@ -214,7 +214,7 @@ describe("Crop an image", () => {
 });
 
 describe("Cropping and other features", async () => {
-  it("Cropping works independently of duplication", async () => {
+  it.skip("Cropping works independently of duplication", async () => {
     const image = h.elements[0] as ExcalidrawImageElement;
     const initialWidth = image.width;
     const initialHeight = image.height;

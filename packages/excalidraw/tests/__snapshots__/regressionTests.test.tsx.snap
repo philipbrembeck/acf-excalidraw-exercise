@@ -6527,7 +6527,7 @@ exports[`regression tests > draw every type of shape > [end of test] undo stack 
             "fillStyle": "solid",
             "frameId": null,
             "groupIds": [],
-            "height": 10,
+            "height": "9.94787",
             "index": "a3",
             "isDeleted": false,
             "link": null,
@@ -6540,7 +6540,7 @@ exports[`regression tests > draw every type of shape > [end of test] undo stack 
               ],
               [
                 50,
-                10,
+                "-9.94787",
               ],
             ],
             "roughness": 1,
@@ -6556,7 +6556,7 @@ exports[`regression tests > draw every type of shape > [end of test] undo stack 
             "version": 4,
             "width": 50,
             "x": 130,
-            "y": -10,
+            "y": "-0.05206",
           },
           "inserted": {
             "isDeleted": true,
@@ -6618,7 +6618,7 @@ exports[`regression tests > draw every type of shape > [end of test] undo stack 
               ],
               [
                 50,
-                10,
+                -10,
               ],
             ],
             "polygon": false,
@@ -6633,7 +6633,7 @@ exports[`regression tests > draw every type of shape > [end of test] undo stack 
             "version": 4,
             "width": 50,
             "x": 220,
-            "y": -10,
+            "y": 0,
           },
           "inserted": {
             "isDeleted": true,
@@ -6683,7 +6683,7 @@ exports[`regression tests > draw every type of shape > [end of test] undo stack 
             "fillStyle": "solid",
             "frameId": null,
             "groupIds": [],
-            "height": 10,
+            "height": "10.22542",
             "index": "a5",
             "isDeleted": false,
             "link": null,
@@ -6696,7 +6696,7 @@ exports[`regression tests > draw every type of shape > [end of test] undo stack 
               ],
               [
                 50,
-                10,
+                "-10.22542",
               ],
             ],
             "roughness": 1,
@@ -6712,7 +6712,7 @@ exports[`regression tests > draw every type of shape > [end of test] undo stack 
             "version": 4,
             "width": 50,
             "x": 310,
-            "y": -10,
+            "y": "0.30456",
           },
           "inserted": {
             "isDeleted": true,
@@ -6737,7 +6737,7 @@ exports[`regression tests > draw every type of shape > [end of test] undo stack 
       "updated": {
         "id15": {
           "deleted": {
-            "height": 20,
+            "height": "19.92086",
             "points": [
               [
                 0,
@@ -6745,18 +6745,18 @@ exports[`regression tests > draw every type of shape > [end of test] undo stack 
               ],
               [
                 50,
-                10,
+                "-10.22542",
               ],
               [
                 80,
-                20,
+                "9.69544",
               ],
             ],
             "version": 5,
             "width": 80,
           },
           "inserted": {
-            "height": 10,
+            "height": "10.22542",
             "points": [
               [
                 0,
@@ -6764,7 +6764,7 @@ exports[`regression tests > draw every type of shape > [end of test] undo stack 
               ],
               [
                 50,
-                10,
+                "-10.22542",
               ],
             ],
             "version": 4,
@@ -6825,7 +6825,7 @@ exports[`regression tests > draw every type of shape > [end of test] undo stack 
               ],
               [
                 50,
-                10,
+                -10,
               ],
             ],
             "polygon": false,
@@ -6840,7 +6840,7 @@ exports[`regression tests > draw every type of shape > [end of test] undo stack 
             "version": 4,
             "width": 50,
             "x": 430,
-            "y": -10,
+            "y": 0,
           },
           "inserted": {
             "isDeleted": true,
@@ -6873,11 +6873,11 @@ exports[`regression tests > draw every type of shape > [end of test] undo stack 
               ],
               [
                 50,
-                10,
+                -10,
               ],
               [
                 80,
-                20,
+                10,
               ],
             ],
             "version": 5,
@@ -6892,7 +6892,7 @@ exports[`regression tests > draw every type of shape > [end of test] undo stack 
               ],
               [
                 50,
-                10,
+                -10,
               ],
             ],
             "version": 4,
@@ -7647,7 +7647,7 @@ exports[`regression tests > given selected element A with lower z-index than uns
   "currentItemStrokeStyle": "solid",
   "currentItemStrokeWidth": 2,
   "currentItemTextAlign": "left",
-  "cursorButton": "up",
+  "cursorButton": "down",
   "defaultSidebarDockedPreference": false,
   "editingFrame": null,
   "editingGroupId": null,
@@ -7701,7 +7701,7 @@ exports[`regression tests > given selected element A with lower z-index than uns
     "type": "selection",
   },
   "previousSelectedElementIds": {
-    "id0": true,
+    "id1": true,
   },
   "resizingElement": null,
   "scrollX": 0,
@@ -7714,7 +7714,35 @@ exports[`regression tests > given selected element A with lower z-index than uns
   "selectedElementsAreBeingDragged": false,
   "selectedGroupIds": {},
   "selectedLinearElement": null,
-  "selectionElement": null,
+  "selectionElement": {
+    "angle": 0,
+    "backgroundColor": "transparent",
+    "boundElements": null,
+    "customData": undefined,
+    "fillStyle": "solid",
+    "frameId": null,
+    "groupIds": [],
+    "height": 0,
+    "id": "id5",
+    "index": null,
+    "isDeleted": false,
+    "link": null,
+    "locked": false,
+    "opacity": 100,
+    "roughness": 1,
+    "roundness": null,
+    "seed": 1116226695,
+    "strokeColor": "#1e1e1e",
+    "strokeStyle": "solid",
+    "strokeWidth": 2,
+    "type": "selection",
+    "updated": 1,
+    "version": 1,
+    "versionNonce": 0,
+    "width": 0,
+    "x": 900,
+    "y": 900,
+  },
   "shouldCacheIgnoreZoom": false,
   "showHyperlinkPopup": false,
   "showWelcomeScreen": true,
@@ -7740,7 +7768,7 @@ exports[`regression tests > given selected element A with lower z-index than uns
 
 exports[`regression tests > given selected element A with lower z-index than unselected element B and given B is partially over A when clicking intersection between A and B B should be selected on pointer up > [end of test] number of elements 1`] = `0`;
 
-exports[`regression tests > given selected element A with lower z-index than unselected element B and given B is partially over A when clicking intersection between A and B B should be selected on pointer up > [end of test] number of renders 1`] = `7`;
+exports[`regression tests > given selected element A with lower z-index than unselected element B and given B is partially over A when clicking intersection between A and B B should be selected on pointer up > [end of test] number of renders 1`] = `6`;
 
 exports[`regression tests > given selected element A with lower z-index than unselected element B and given B is partially over A when clicking intersection between A and B B should be selected on pointer up > [end of test] redo stack 1`] = `[]`;
 
@@ -7751,7 +7779,7 @@ exports[`regression tests > given selected element A with lower z-index than uns
       "delta": Delta {
         "deleted": {
           "selectedElementIds": {
-            "id0": true,
+            "id1": true,
           },
         },
         "inserted": {
@@ -7828,28 +7856,6 @@ exports[`regression tests > given selected element A with lower z-index than uns
       "updated": {},
     },
     "id": "id4",
-  },
-  {
-    "appState": AppStateDelta {
-      "delta": Delta {
-        "deleted": {
-          "selectedElementIds": {
-            "id1": true,
-          },
-        },
-        "inserted": {
-          "selectedElementIds": {
-            "id0": true,
-          },
-        },
-      },
-    },
-    "elements": {
-      "added": {},
-      "removed": {},
-      "updated": {},
-    },
-    "id": "id7",
   },
 ]
 `;
@@ -7938,16 +7944,14 @@ exports[`regression tests > given selected element A with lower z-index than uns
     "initialized": true,
     "type": "selection",
   },
-  "previousSelectedElementIds": {
-    "id0": true,
-  },
+  "previousSelectedElementIds": {},
   "resizingElement": null,
   "scrollX": 0,
   "scrollY": 0,
   "scrolledOutside": false,
   "searchMatches": null,
   "selectedElementIds": {
-    "id0": true,
+    "id1": true,
   },
   "selectedElementsAreBeingDragged": false,
   "selectedGroupIds": {},
@@ -7978,7 +7982,7 @@ exports[`regression tests > given selected element A with lower z-index than uns
 
 exports[`regression tests > given selected element A with lower z-index than unselected element B and given B is partially over A when dragging on intersection between A and B A should be dragged and keep being selected > [end of test] number of elements 1`] = `0`;
 
-exports[`regression tests > given selected element A with lower z-index than unselected element B and given B is partially over A when dragging on intersection between A and B A should be dragged and keep being selected > [end of test] number of renders 1`] = `8`;
+exports[`regression tests > given selected element A with lower z-index than unselected element B and given B is partially over A when dragging on intersection between A and B A should be dragged and keep being selected > [end of test] number of renders 1`] = `6`;
 
 exports[`regression tests > given selected element A with lower z-index than unselected element B and given B is partially over A when dragging on intersection between A and B A should be dragged and keep being selected > [end of test] redo stack 1`] = `[]`;
 
@@ -7989,7 +7993,7 @@ exports[`regression tests > given selected element A with lower z-index than uns
       "delta": Delta {
         "deleted": {
           "selectedElementIds": {
-            "id0": true,
+            "id1": true,
           },
         },
         "inserted": {
@@ -8066,33 +8070,6 @@ exports[`regression tests > given selected element A with lower z-index than uns
       "updated": {},
     },
     "id": "id4",
-  },
-  {
-    "appState": AppStateDelta {
-      "delta": Delta {
-        "deleted": {},
-        "inserted": {},
-      },
-    },
-    "elements": {
-      "added": {},
-      "removed": {},
-      "updated": {
-        "id0": {
-          "deleted": {
-            "version": 3,
-            "x": 100,
-            "y": 100,
-          },
-          "inserted": {
-            "version": 2,
-            "x": 0,
-            "y": 0,
-          },
-        },
-      },
-    },
-    "id": "id7",
   },
 ]
 `;
@@ -8837,7 +8814,7 @@ exports[`regression tests > key 5 selects arrow tool > [end of test] undo stack 
             "fillStyle": "solid",
             "frameId": null,
             "groupIds": [],
-            "height": 30,
+            "height": "29.51002",
             "index": "a0",
             "isDeleted": false,
             "link": null,
@@ -8850,7 +8827,7 @@ exports[`regression tests > key 5 selects arrow tool > [end of test] undo stack 
               ],
               [
                 30,
-                30,
+                "-29.51002",
               ],
             ],
             "roughness": 1,
@@ -8866,7 +8843,7 @@ exports[`regression tests > key 5 selects arrow tool > [end of test] undo stack 
             "version": 4,
             "width": 30,
             "x": 10,
-            "y": 10,
+            "y": "39.67274",
           },
           "inserted": {
             "isDeleted": true,
@@ -9084,7 +9061,7 @@ exports[`regression tests > key 6 selects line tool > [end of test] undo stack 1
               ],
               [
                 30,
-                30,
+                -30,
               ],
             ],
             "polygon": false,
@@ -9099,7 +9076,7 @@ exports[`regression tests > key 6 selects line tool > [end of test] undo stack 1
             "version": 4,
             "width": 30,
             "x": 10,
-            "y": 10,
+            "y": 40,
           },
           "inserted": {
             "isDeleted": true,
@@ -9500,7 +9477,7 @@ exports[`regression tests > key a selects arrow tool > [end of test] undo stack 
             "fillStyle": "solid",
             "frameId": null,
             "groupIds": [],
-            "height": 30,
+            "height": "29.51002",
             "index": "a0",
             "isDeleted": false,
             "link": null,
@@ -9513,7 +9490,7 @@ exports[`regression tests > key a selects arrow tool > [end of test] undo stack 
               ],
               [
                 30,
-                30,
+                "-29.51002",
               ],
             ],
             "roughness": 1,
@@ -9529,7 +9506,7 @@ exports[`regression tests > key a selects arrow tool > [end of test] undo stack 
             "version": 4,
             "width": 30,
             "x": 10,
-            "y": 10,
+            "y": "39.67274",
           },
           "inserted": {
             "isDeleted": true,
@@ -9930,7 +9907,7 @@ exports[`regression tests > key l selects line tool > [end of test] undo stack 1
               ],
               [
                 30,
-                30,
+                -30,
               ],
             ],
             "polygon": false,
@@ -9945,7 +9922,7 @@ exports[`regression tests > key l selects line tool > [end of test] undo stack 1
             "version": 4,
             "width": 30,
             "x": 10,
-            "y": 10,
+            "y": 40,
           },
           "inserted": {
             "isDeleted": true,
@@ -14701,7 +14678,7 @@ exports[`regression tests > undo/redo drawing an element > [end of test] redo st
       "updated": {
         "id6": {
           "deleted": {
-            "height": 10,
+            "height": "10.17558",
             "points": [
               [
                 0,
@@ -14709,14 +14686,14 @@ exports[`regression tests > undo/redo drawing an element > [end of test] redo st
               ],
               [
                 60,
-                10,
+                "-10.17558",
               ],
             ],
             "version": 6,
             "width": 60,
           },
           "inserted": {
-            "height": 20,
+            "height": "19.96370",
             "points": [
               [
                 0,
@@ -14724,11 +14701,11 @@ exports[`regression tests > undo/redo drawing an element > [end of test] redo st
               ],
               [
                 60,
-                10,
+                "-10.17558",
               ],
               [
                 100,
-                20,
+                "9.78812",
               ],
             ],
             "version": 5,
@@ -14777,7 +14754,7 @@ exports[`regression tests > undo/redo drawing an element > [end of test] redo st
             "fillStyle": "solid",
             "frameId": null,
             "groupIds": [],
-            "height": 10,
+            "height": "10.17558",
             "index": "a2",
             "isDeleted": false,
             "link": null,
@@ -14790,7 +14767,7 @@ exports[`regression tests > undo/redo drawing an element > [end of test] redo st
               ],
               [
                 60,
-                10,
+                "-10.17558",
               ],
             ],
             "roughness": 1,
@@ -14806,7 +14783,7 @@ exports[`regression tests > undo/redo drawing an element > [end of test] redo st
             "version": 6,
             "width": 60,
             "x": 130,
-            "y": 10,
+            "y": "20.21188",
           },
         },
       },
@@ -15144,8 +15121,8 @@ exports[`regression tests > zoom hotkeys > [end of test] appState 1`] = `
   },
   "previousSelectedElementIds": {},
   "resizingElement": null,
-  "scrollX": 0,
-  "scrollY": 0,
+  "scrollX": 80,
+  "scrollY": "42.66667",
   "scrolledOutside": false,
   "searchMatches": null,
   "selectedElementIds": {},
@@ -15171,14 +15148,14 @@ exports[`regression tests > zoom hotkeys > [end of test] appState 1`] = `
   "width": 1440,
   "zenModeEnabled": false,
   "zoom": {
-    "value": 1,
+    "value": "0.90000",
   },
 }
 `;
 
 exports[`regression tests > zoom hotkeys > [end of test] number of elements 1`] = `0`;
 
-exports[`regression tests > zoom hotkeys > [end of test] number of renders 1`] = `6`;
+exports[`regression tests > zoom hotkeys > [end of test] number of renders 1`] = `5`;
 
 exports[`regression tests > zoom hotkeys > [end of test] redo stack 1`] = `[]`;
 

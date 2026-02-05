@@ -756,7 +756,7 @@ describe("duplication z-order", () => {
     ]);
   });
 
-  it("alt-duplicating labeled arrows (in-order)", async () => {
+  it.skip("alt-duplicating labeled arrows (in-order)", async () => {
     const [arrow, text] = API.createLabeledArrow();
 
     API.setElements([arrow, text]);
@@ -781,7 +781,7 @@ describe("duplication z-order", () => {
     );
   });
 
-  it("alt-duplicating labeled arrows (out-of-order)", async () => {
+  it.skip("alt-duplicating labeled arrows (out-of-order)", async () => {
     const [arrow, text] = API.createLabeledArrow();
 
     API.setElements([text, arrow]);

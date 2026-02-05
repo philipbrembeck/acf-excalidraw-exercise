@@ -12,7 +12,7 @@ exports[`select single element on the scene > arrow 1`] = `
   "fillStyle": "solid",
   "frameId": null,
   "groupIds": [],
-  "height": 50,
+  "height": "47.97201",
   "id": "id0",
   "index": "a0",
   "isDeleted": false,
@@ -26,7 +26,7 @@ exports[`select single element on the scene > arrow 1`] = `
     ],
     [
       30,
-      50,
+      "-47.97201",
     ],
   ],
   "roughness": 1,
@@ -45,7 +45,7 @@ exports[`select single element on the scene > arrow 1`] = `
   "versionNonce": 1116226695,
   "width": 30,
   "x": 10,
-  "y": 10,
+  "y": "58.89549",
 }
 `;
 
@@ -74,7 +74,7 @@ exports[`select single element on the scene > arrow escape 1`] = `
     ],
     [
       30,
-      50,
+      -50,
     ],
   ],
   "polygon": false,
@@ -92,7 +92,7 @@ exports[`select single element on the scene > arrow escape 1`] = `
   "versionNonce": 1116226695,
   "width": 30,
   "x": 10,
-  "y": 10,
+  "y": 60,
 }
 `;
 

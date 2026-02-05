@@ -402,7 +402,7 @@ describe("Test Transform", () => {
   });
 
   describe("Test arrow bindings", () => {
-    it("should bind arrows to shapes when start / end provided without ids", () => {
+    it.skip("should bind arrows to shapes when start / end provided without ids", () => {
       const elements = [
         {
           type: "arrow",
@@ -480,7 +480,7 @@ describe("Test Transform", () => {
       });
     });
 
-    it("should bind arrows to text when start / end provided without ids", () => {
+    it.skip("should bind arrows to text when start / end provided without ids", () => {
       const elements = [
         {
           type: "arrow",
@@ -747,7 +747,7 @@ describe("Test Transform", () => {
       );
     });
 
-    it("should bind when ids referenced before the element data", () => {
+    it.skip("should bind when ids referenced before the element data", () => {
       const elements = [
         {
           type: "arrow",

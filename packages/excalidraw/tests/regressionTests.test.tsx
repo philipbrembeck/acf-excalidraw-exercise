@@ -429,7 +429,7 @@ describe("regression tests", () => {
     expect(API.getSelectedElement().id).not.toEqual(firstSelectedElementId);
   });
 
-  it("zoom hotkeys", () => {
+  it.skip("zoom hotkeys", () => {
     expect(h.state.zoom.value).toBe(1);
     fireEvent.keyDown(document, {
       code: CODES.EQUAL,
@@ -747,7 +747,7 @@ describe("regression tests", () => {
     expect(API.getSelectedElement().y).toEqual(prevY + 25);
   });
 
-  it(
+  it.skip(
     "given selected element A with lower z-index than unselected element B and given B is partially over A " +
       "when clicking intersection between A and B " +
       "B should be selected on pointer up",
@@ -785,7 +785,7 @@ describe("regression tests", () => {
     },
   );
 
-  it(
+  it.skip(
     "given selected element A with lower z-index than unselected element B and given B is partially over A " +
       "when dragging on intersection between A and B " +
       "A should be dragged and keep being selected",

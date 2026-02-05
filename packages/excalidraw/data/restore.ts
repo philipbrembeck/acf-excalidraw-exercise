@@ -380,7 +380,7 @@ export const restoreElement = (
       // if empty text, mark as deleted. We keep in array
       // for data integrity purposes (collab etc.)
       if (opts?.deleteInvisibleElements && !text && !element.isDeleted) {
-        // TODO: we should not do this since it breaks sync / versioning when we exchange / apply just deltas and restore the elements (deletion isn't recorded)
+        // TODO: reconsider — this breaks sync/versioning since deletion isn't recorded in deltas
         element = { ...element, originalText: text, isDeleted: true };
         element = bumpVersion(element);
       }
@@ -469,7 +469,7 @@ export const restoreElement = (
         ...getSizeFromPoints(points),
       };
 
-      // TODO: Separate arrow from linear element
+      // TODO: separate arrow from linear element (see #5764)
       const restoredElement = isElbowArrow(element)
         ? restoreElementWithProperties(element as ExcalidrawElbowArrowElement, {
             ...base,

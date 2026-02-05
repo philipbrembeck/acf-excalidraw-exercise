@@ -275,13 +275,15 @@ export const exportToCanvas = async (
   return canvas;
 };
 
+/** Wraps text in an HTML comment with consistent spacing */
 const createHTMLComment = (text: string) => {
-  // surrounding with spaces to maintain prettified consistency with previous
-  // iterations
-  // <!-- comment -->
   return document.createComment(` ${text} `);
 };
 
+/**
+ * Export the given elements as an SVG document, applying theme,
+ * background, padding, and scale settings.
+ */
 export const exportToSvg = async (
   elements: readonly NonDeletedExcalidrawElement[],
   appState: {
@@ -339,7 +341,7 @@ export const exportToSvg = async (
   const offsetY = -minY + exportPadding;
 
   // ---------------------------------------------------------------------------
-  // initialize SVG root element
+  // Initialize the SVG root element with dimensions and viewBox
   // ---------------------------------------------------------------------------
 
   const svgRoot = document.createElementNS(SVG_NS, "svg");

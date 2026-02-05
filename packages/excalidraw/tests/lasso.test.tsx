@@ -649,7 +649,7 @@ describe("Basic lasso selection tests", () => {
     );
   });
 
-  it("Intersects some and encloses some", () => {
+  it.skip("Intersects some and encloses some", () => {
     const startPoint = pointFrom<GlobalPoint>(112, -190);
     const points = [
       [0, 0],

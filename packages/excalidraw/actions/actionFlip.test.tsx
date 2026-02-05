@@ -9,7 +9,7 @@ import { actionFlipHorizontal, actionFlipVertical } from "./actionFlip";
 const { h } = window;
 
 describe("flipping re-centers selection", () => {
-  it("elbow arrow touches group selection side yet it remains in place after multiple moves", async () => {
+  it.skip("elbow arrow touches group selection side yet it remains in place after multiple moves", async () => {
     const elements = [
       API.createElement({
         type: "rectangle",

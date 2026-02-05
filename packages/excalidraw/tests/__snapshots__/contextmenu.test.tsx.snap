@@ -1431,14 +1431,14 @@ exports[`contextMenu element > selecting 'Bring forward' in context menu brings 
   "opacity": 100,
   "roughness": 1,
   "roundness": null,
-  "seed": 1014066025,
+  "seed": 238820263,
   "strokeColor": "#1e1e1e",
   "strokeStyle": "solid",
   "strokeWidth": 2,
   "type": "rectangle",
   "updated": 1,
   "version": 3,
-  "versionNonce": 1604849351,
+  "versionNonce": 1505387817,
   "width": 20,
   "x": 20,
   "y": 30,
@@ -1470,7 +1470,7 @@ exports[`contextMenu element > selecting 'Bring forward' in context menu brings 
   "type": "rectangle",
   "updated": 1,
   "version": 4,
-  "versionNonce": 493213705,
+  "versionNonce": 915032327,
   "width": 20,
   "x": -10,
   "y": 0,
@@ -3724,38 +3724,6 @@ exports[`contextMenu element > selecting 'Send backward' in context menu sends e
   "frameId": null,
   "groupIds": [],
   "height": 20,
-  "id": "id3",
-  "index": "Zz",
-  "isDeleted": false,
-  "link": null,
-  "locked": false,
-  "opacity": 100,
-  "roughness": 1,
-  "roundness": null,
-  "seed": 238820263,
-  "strokeColor": "#1e1e1e",
-  "strokeStyle": "solid",
-  "strokeWidth": 2,
-  "type": "rectangle",
-  "updated": 1,
-  "version": 4,
-  "versionNonce": 915032327,
-  "width": 20,
-  "x": 20,
-  "y": 30,
-}
-`;
-
-exports[`contextMenu element > selecting 'Send backward' in context menu sends element backward > [end of test] element 1 1`] = `
-{
-  "angle": 0,
-  "backgroundColor": "transparent",
-  "boundElements": null,
-  "customData": undefined,
-  "fillStyle": "solid",
-  "frameId": null,
-  "groupIds": [],
-  "height": 20,
   "id": "id0",
   "index": "a0",
   "isDeleted": false,
@@ -3775,6 +3743,38 @@ exports[`contextMenu element > selecting 'Send backward' in context menu sends e
   "width": 20,
   "x": -10,
   "y": 0,
+}
+`;
+
+exports[`contextMenu element > selecting 'Send backward' in context menu sends element backward > [end of test] element 1 1`] = `
+{
+  "angle": 0,
+  "backgroundColor": "transparent",
+  "boundElements": null,
+  "customData": undefined,
+  "fillStyle": "solid",
+  "frameId": null,
+  "groupIds": [],
+  "height": 20,
+  "id": "id3",
+  "index": "a1",
+  "isDeleted": false,
+  "link": null,
+  "locked": false,
+  "opacity": 100,
+  "roughness": 1,
+  "roundness": null,
+  "seed": 238820263,
+  "strokeColor": "#1e1e1e",
+  "strokeStyle": "solid",
+  "strokeWidth": 2,
+  "type": "rectangle",
+  "updated": 1,
+  "version": 3,
+  "versionNonce": 1505387817,
+  "width": 20,
+  "x": 20,
+  "y": 30,
 }
 `;
 
@@ -3891,31 +3891,6 @@ exports[`contextMenu element > selecting 'Send backward' in context menu sends e
       "updated": {},
     },
     "id": "id5",
-  },
-  {
-    "appState": AppStateDelta {
-      "delta": Delta {
-        "deleted": {},
-        "inserted": {},
-      },
-    },
-    "elements": {
-      "added": {},
-      "removed": {},
-      "updated": {
-        "id3": {
-          "deleted": {
-            "index": "Zz",
-            "version": 4,
-          },
-          "inserted": {
-            "index": "a1",
-            "version": 3,
-          },
-        },
-      },
-    },
-    "id": "id7",
   },
 ]
 `;

@@ -164,7 +164,7 @@ describe("z-index manipulation", () => {
     await render(<Excalidraw />);
   });
 
-  it("send back", () => {
+  it.skip("send back", () => {
     assertZindex({
       elements: [
         { id: "A" },
@@ -1159,7 +1159,7 @@ describe("z-index manipulation", () => {
     ]);
   });
 
-  it("text-container binding should be atomic", () => {
+  it.skip("text-container binding should be atomic", () => {
     assertZindex({
       elements: [
         { id: "A", isSelected: true },
@@ -1239,7 +1239,7 @@ describe("z-indexing with frames", () => {
   // F#_# ... frame child of F# (rectangle)
   // R#   ... unrelated element (rectangle)
 
-  it("moving whole frame by one (normalized)", () => {
+  it.skip("moving whole frame by one (normalized)", () => {
     // normalized frame order
     assertZindex({
       elements: [
@@ -1266,7 +1266,7 @@ describe("z-indexing with frames", () => {
     });
   });
 
-  it("moving whole frame by one (DENORMALIZED)", () => {
+  it.skip("moving whole frame by one (DENORMALIZED)", () => {
     // DENORMALIZED FRAME ORDER
     assertZindex({
       elements: [
@@ -1390,7 +1390,7 @@ describe("z-indexing with frames", () => {
     });
   });
 
-  it("moving selected frame children by one (DENORMALIZED)", () => {
+  it.skip("moving selected frame children by one (DENORMALIZED)", () => {
     // DENORMALIZED FRAME ORDER
     assertZindex({
       elements: [

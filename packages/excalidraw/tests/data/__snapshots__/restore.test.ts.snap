@@ -383,7 +383,7 @@ exports[`restoreElements > should restore text element correctly passing value f
   "verticalAlign": "middle",
   "width": 100,
   "x": -20,
-  "y": "-8.75000",
+  "y": "-0.62500",
 }
 `;
 

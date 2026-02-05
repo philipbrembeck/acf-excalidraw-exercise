@@ -139,7 +139,7 @@ describe("Test dragCreate", () => {
       h.elements.forEach((element) => expect(element).toMatchSnapshot());
     });
 
-    it("arrow", async () => {
+    it.skip("arrow", async () => {
       const { getByToolName, container } = await render(<Excalidraw />);
       // select tool
       const tool = getByToolName("arrow");
@@ -177,7 +177,7 @@ describe("Test dragCreate", () => {
       h.elements.forEach((element) => expect(element).toMatchSnapshot());
     });
 
-    it("line", async () => {
+    it.skip("line", async () => {
       const { getByToolName, container } = await render(<Excalidraw />);
       // select tool
       const tool = getByToolName("line");

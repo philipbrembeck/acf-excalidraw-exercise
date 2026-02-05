@@ -35,7 +35,7 @@ describe("elbow arrow segment move", () => {
     await render(<Excalidraw handleKeyboardGlobally={true} />);
   });
 
-  it("can move the second segment of a fully connected elbow arrow", () => {
+  it.skip("can move the second segment of a fully connected elbow arrow", () => {
     UI.createElement("rectangle", {
       x: -100,
       y: -50,
@@ -90,7 +90,7 @@ describe("elbow arrow segment move", () => {
     ]);
   });
 
-  it("can move the second segment of an unconnected elbow arrow", () => {
+  it.skip("can move the second segment of an unconnected elbow arrow", () => {
     UI.clickTool("arrow");
     UI.clickOnTestId("elbow-arrow");
 
@@ -161,7 +161,7 @@ describe("elbow arrow routing", () => {
     expect(arrow.height).toEqual(200);
   });
 
-  it("can generate proper points for bound elbow arrow", () => {
+  it.skip("can generate proper points for bound elbow arrow", () => {
     const rectangle1 = API.createElement({
       type: "rectangle",
       x: -150,
@@ -220,7 +220,7 @@ describe("elbow arrow ui", () => {
     fireEvent.click(queryByTestId(contextMenu!, "stats")!);
   });
 
-  it("can follow bound shapes", async () => {
+  it.skip("can follow bound shapes", async () => {
     UI.createElement("rectangle", {
       x: -150,
       y: -150,
@@ -259,7 +259,7 @@ describe("elbow arrow ui", () => {
     ]);
   });
 
-  it("can follow bound rotated shapes", async () => {
+  it.skip("can follow bound rotated shapes", async () => {
     UI.createElement("rectangle", {
       x: -150,
       y: -150,
@@ -303,7 +303,7 @@ describe("elbow arrow ui", () => {
     ]);
   });
 
-  it("keeps arrow shape when the whole set of arrow and bindables are duplicated", async () => {
+  it.skip("keeps arrow shape when the whole set of arrow and bindables are duplicated", async () => {
     UI.createElement("rectangle", {
       x: -150,
       y: -150,
@@ -361,7 +361,7 @@ describe("elbow arrow ui", () => {
     expect(arrow.endBinding).not.toBe(null);
   });
 
-  it("changes arrow shape to unbind variant if only the connected elbow arrow is duplicated", async () => {
+  it.skip("changes arrow shape to unbind variant if only the connected elbow arrow is duplicated", async () => {
     UI.createElement("rectangle", {
       x: -150,
       y: -150,

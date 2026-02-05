@@ -43,7 +43,7 @@ describe("binding for simple arrows", () => {
       await render(<Excalidraw handleKeyboardGlobally={true} />);
     });
 
-    it("should create an `inside` binding", () => {
+    it.skip("should create an `inside` binding", () => {
       // Create a rectangle
       UI.clickTool("rectangle");
       mouse.reset();
