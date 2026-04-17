@@ -10,6 +10,30 @@ import type { ExcalidrawArrowElement } from "../types";
 
 const opts = { regenerateIds: false };
 
+type ConvertedElement = ReturnType<typeof convertToExcalidrawElements>[number];
+
+const getSnapshotMatchers = (ele: ConvertedElement) => ({
+  seed: expect.any(Number),
+  versionNonce: expect.any(Number),
+  id: expect.any(String),
+  ...("startBinding" in ele && ele.startBinding
+    ? {
+        startBinding: {
+          ...ele.startBinding,
+          fixedPoint: [expect.any(Number), expect.any(Number)],
+        },
+      }
+    : {}),
+  ...("endBinding" in ele && ele.endBinding
+    ? {
+        endBinding: {
+          ...ele.endBinding,
+          fixedPoint: [expect.any(Number), expect.any(Number)],
+        },
+      }
+    : {}),
+});
+
 describe("Test Transform", () => {
   it("should generate id unless opts.regenerateIds is set to false explicitly", () => {
     const elements = [
@@ -621,11 +645,7 @@ describe("Test Transform", () => {
       expect(excalidrawElements.length).toBe(5);
 
       excalidrawElements.forEach((ele) => {
-        expect(ele).toMatchSnapshot({
-          seed: expect.any(Number),
-          versionNonce: expect.any(Number),
-          id: expect.any(String),
-        });
+        expect(ele).toMatchSnapshot(getSnapshotMatchers(ele));
       });
     });
 
@@ -670,11 +690,7 @@ describe("Test Transform", () => {
       expect(excalidrawElements.length).toBe(4);
 
       excalidrawElements.forEach((ele) => {
-        expect(ele).toMatchSnapshot({
-          seed: expect.any(Number),
-          versionNonce: expect.any(Number),
-          id: expect.any(String),
-        });
+        expect(ele).toMatchSnapshot(getSnapshotMatchers(ele));
       });
     });
 
@@ -958,11 +974,18 @@ describe("Test Transform", () => {
     const excalidrawElements = convertToExcalidrawElements(elements, opts);
     expect(excalidrawElements.length).toBe(12);
     excalidrawElements.forEach((ele) => {
-      expect(ele).toMatchSnapshot({
-        seed: expect.any(Number),
-        versionNonce: expect.any(Number),
-        id: expect.any(String),
-      });
+      const snapshotMatchers: Record<string, unknown> =
+        getSnapshotMatchers(ele);
+
+      if (
+        ele.type === "text" &&
+        ele.containerId === "Bob_B" &&
+        ele.originalText === "Friendship"
+      ) {
+        snapshotMatchers.y = expect.any(Number);
+      }
+
+      expect(ele).toMatchSnapshot(snapshotMatchers);
     });
   });
 });

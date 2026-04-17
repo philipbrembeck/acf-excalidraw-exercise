@@ -119,10 +119,7 @@ export const getRenderOpacity = (
   globalAlpha: number = 1,
 ) => {
   // combine frame and element opacity into a normalized 0-1 range
-  const frameOpacity = containingFrame?.opacity ?? 100;
-  let opacity =
-    (element.opacity / 100) *
-    globalAlpha;
+  let opacity = (element.opacity / 100) * globalAlpha;
 
   // reduce opacity further when element is pending erasure
   const isPendingErasure =

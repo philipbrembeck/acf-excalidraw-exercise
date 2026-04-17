@@ -4,12 +4,12 @@
 
 ## Installation
 
-Use `npm` or `yarn` to install the package.
+Use `npm` or `pnpm` to install the package.
 
 ```bash
 npm install react react-dom @excalidraw/excalidraw
 # or
-yarn add react react-dom @excalidraw/excalidraw
+pnpm add react react-dom @excalidraw/excalidraw
 ```
 
 > **Note**: If you don't want to wait for the next stable release and try out the unreleased changes, use `@excalidraw/excalidraw@next`.

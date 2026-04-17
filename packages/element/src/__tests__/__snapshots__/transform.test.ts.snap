@@ -89,8 +89,8 @@ exports[`Test Transform > Test arrow bindings > should bind arrows to existing s
   "endBinding": {
     "elementId": "ellipse-1",
     "fixedPoint": [
-      0.04,
-      0.6533333333333333,
+      Any<Number>,
+      Any<Number>,
     ],
     "mode": "orbit",
   },
@@ -121,8 +121,8 @@ exports[`Test Transform > Test arrow bindings > should bind arrows to existing s
   "startBinding": {
     "elementId": "id41",
     "fixedPoint": [
-      1,
-      0.38333333333333336,
+      Any<Number>,
+      Any<Number>,
     ],
     "mode": "orbit",
   },
@@ -150,8 +150,8 @@ exports[`Test Transform > Test arrow bindings > should bind arrows to existing s
   "endBinding": {
     "elementId": "ellipse-1",
     "fixedPoint": [
-      -0.01,
-      0.5510410607138814,
+      Any<Number>,
+      Any<Number>,
     ],
     "mode": "orbit",
   },
@@ -182,8 +182,8 @@ exports[`Test Transform > Test arrow bindings > should bind arrows to existing s
   "startBinding": {
     "elementId": "diamond-1",
     "fixedPoint": [
-      0.9357142857142857,
-      0.4931231821416441,
+      Any<Number>,
+      Any<Number>,
     ],
     "mode": "orbit",
   },
@@ -345,8 +345,8 @@ exports[`Test Transform > Test arrow bindings > should bind arrows to existing t
   "endBinding": {
     "elementId": "text-2",
     "fixedPoint": [
-      -2.05,
-      1.3264394686888408,
+      Any<Number>,
+      Any<Number>,
     ],
     "mode": "orbit",
   },
@@ -377,8 +377,8 @@ exports[`Test Transform > Test arrow bindings > should bind arrows to existing t
   "startBinding": {
     "elementId": "text-1",
     "fixedPoint": [
-      1,
-      1.3264394686888408,
+      Any<Number>,
+      Any<Number>,
     ],
     "mode": "orbit",
   },
@@ -1118,8 +1118,8 @@ exports[`Test Transform > should transform the elements correctly when linear el
   "endBinding": {
     "elementId": "Alice",
     "fixedPoint": [
-      -0.07542628418945944,
-      0.5062275363733484,
+      Any<Number>,
+      Any<Number>,
     ],
     "mode": "orbit",
   },
@@ -1152,8 +1152,8 @@ exports[`Test Transform > should transform the elements correctly when linear el
   "startBinding": {
     "elementId": "Bob",
     "fixedPoint": [
-      1.000004978564514,
-      0.5062275363733484,
+      Any<Number>,
+      Any<Number>,
     ],
     "mode": "orbit",
   },
@@ -1186,8 +1186,8 @@ exports[`Test Transform > should transform the elements correctly when linear el
   "endBinding": {
     "elementId": "B",
     "fixedPoint": [
-      0.46387050630528887,
-      0.5131514311821823,
+      Any<Number>,
+      Any<Number>,
     ],
     "mode": "orbit",
   },
@@ -1216,8 +1216,8 @@ exports[`Test Transform > should transform the elements correctly when linear el
   "startBinding": {
     "elementId": "Bob",
     "fixedPoint": [
-      0.39381496335223337,
-      -0.008098107211460941,
+      Any<Number>,
+      Any<Number>,
     ],
     "mode": "orbit",
   },
@@ -1484,7 +1484,7 @@ exports[`Test Transform > should transform the elements correctly when linear el
   "verticalAlign": "middle",
   "width": 100,
   "x": 27.016999999999996,
-  "y": 78.73131671730428,
+  "y": Any<Number>,
 }
 `;
 

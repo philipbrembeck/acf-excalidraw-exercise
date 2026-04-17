@@ -1,13 +1,14 @@
 {
   "private": true,
   "name": "excalidraw-monorepo",
-  "packageManager": "yarn@1.22.22",
+  "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319",
   "workspaces": [
     "excalidraw-app",
     "packages/*",
     "examples/*"
   ],
   "devDependencies": {
+    "excalidraw-app": "workspace:*",
     "@babel/preset-env": "7.26.9",
     "@excalidraw/eslint-config": "1.0.3",
     "@excalidraw/prettier-config": "1.0.2",
@@ -50,32 +51,32 @@
   "prettier": "@excalidraw/prettier-config",
   "scripts": {
     "build-node": "node ./scripts/build-node.js",
-    "build:app:docker": "yarn --cwd ./excalidraw-app build:app:docker",
-    "build:app": "yarn --cwd ./excalidraw-app build:app",
-    "build:common": "yarn --cwd ./packages/common build:esm",
-    "build:element": "yarn --cwd ./packages/element build:esm",
-    "build:excalidraw": "yarn --cwd ./packages/excalidraw build:esm",
-    "build:math": "yarn --cwd ./packages/math build:esm",
-    "build:packages": "yarn build:common && yarn build:math && yarn build:element && yarn build:excalidraw",
-    "build:version": "yarn --cwd ./excalidraw-app build:version",
-    "build": "yarn --cwd ./excalidraw-app build",
-    "build:preview": "yarn --cwd ./excalidraw-app build:preview",
-    "start": "yarn --cwd ./excalidraw-app start",
-    "start:production": "yarn --cwd ./excalidraw-app start:production",
-    "start:example": "yarn build:packages && yarn --cwd ./examples/with-script-in-browser start",
-    "test:all": "yarn test:typecheck && yarn test:code && yarn test:other && yarn test:app --watch=false",
+    "build:app:docker": "pnpm --dir ./excalidraw-app run build:app:docker",
+    "build:app": "pnpm --dir ./excalidraw-app run build:app",
+    "build:common": "pnpm --dir ./packages/common run build:esm",
+    "build:element": "pnpm --dir ./packages/element run build:esm",
+    "build:excalidraw": "pnpm --dir ./packages/excalidraw run build:esm",
+    "build:math": "pnpm --dir ./packages/math run build:esm",
+    "build:packages": "pnpm run build:common && pnpm run build:math && pnpm run build:element && pnpm run build:excalidraw",
+    "build:version": "pnpm --dir ./excalidraw-app run build:version",
+    "build": "pnpm --dir ./excalidraw-app run build",
+    "build:preview": "pnpm --dir ./excalidraw-app run build:preview",
+    "start": "pnpm --dir ./excalidraw-app run start",
+    "start:production": "pnpm --dir ./excalidraw-app run start:production",
+    "start:example": "pnpm run build:packages && pnpm --dir ./examples/with-script-in-browser run start",
+    "test:all": "pnpm run test:typecheck && pnpm run test:code && pnpm run test:other && vitest --watch=false",
     "test:app": "vitest",
     "test:code": "eslint --max-warnings=0 --ext .js,.ts,.tsx .",
-    "test:other": "yarn prettier --list-different",
+    "test:other": "prettier \"**/*.{css,scss,json,md,html,yml}\" --ignore-path=.eslintignore --list-different",
     "test:typecheck": "tsc",
-    "test:update": "yarn test:app --update --watch=false",
-    "test": "yarn test:app",
+    "test:update": "vitest --update --watch=false",
+    "test": "vitest",
     "test:coverage": "vitest --coverage",
     "test:coverage:watch": "vitest --coverage --watch",
-    "test:ui": "yarn test --ui --coverage.enabled=true",
-    "fix:code": "yarn test:code --fix",
-    "fix:other": "yarn prettier --write",
-    "fix": "yarn fix:other && yarn fix:code",
+    "test:ui": "vitest --ui --coverage.enabled=true",
+    "fix:code": "eslint --max-warnings=0 --ext .js,.ts,.tsx . --fix",
+    "fix:other": "prettier \"**/*.{css,scss,json,md,html,yml}\" --ignore-path=.eslintignore --write",
+    "fix": "pnpm run fix:other && pnpm run fix:code",
     "locales-coverage": "node scripts/build-locales-coverage.js",
     "locales-coverage:description": "node scripts/locales-coverage-description.js",
     "prepare": "husky install",
@@ -85,10 +86,12 @@
     "release:next": "node scripts/release.js --tag=next",
     "release:latest": "node scripts/release.js --tag=latest",
     "rm:build": "rimraf --glob excalidraw-app/build excalidraw-app/dist excalidraw-app/dev-dist packages/*/dist packages/*/build examples/*/build examples/*/dist",
-    "rm:node_modules": "rimraf --glob node_modules excalidraw-app/node_modules packages/*/node_modules",
-    "clean-install": "yarn rm:node_modules && yarn install"
+    "rm:node_modules": "rimraf --glob node_modules excalidraw-app/node_modules packages/*/node_modules examples/*/node_modules dev-docs/node_modules",
+    "clean-install": "pnpm run rm:node_modules && pnpm install"
   },
-  "resolutions": {
-    "strip-ansi": "6.0.1"
+  "pnpm": {
+    "overrides": {
+      "strip-ansi": "6.0.1"
+    }
   }
 }

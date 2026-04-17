@@ -1,4 +1,5 @@
 node_modules/
+.pnpm-store/
 build/
 package-lock.json
 .vscode/
@@ -9,3 +10,6 @@ packages/excalidraw/types
 examples/**/public
 dev-dist
 coverage
+.claude/
+dev-docs/src/components/Homepage/index.js
+dev-docs/src/pages/index.js

@@ -1,11 +1,6 @@
 import { KEYS, CODES, isDarwin } from "@excalidraw/common";
 
-import {
-  moveOneLeft,
-  moveOneRight,
-  moveAllLeft,
-  moveAllRight,
-} from "@excalidraw/element";
+import { moveOneRight, moveAllLeft, moveAllRight } from "@excalidraw/element";
 
 import { CaptureUpdateAction } from "@excalidraw/element";
 
