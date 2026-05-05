@@ -2,3 +2,9 @@ packages:
   - excalidraw-app
   - packages/*
   - examples/*
+overrides:
+  strip-ansi: 6.0.1
+allowBuilds:
+  core-js: true
+  esbuild: true
+  protobufjs: true

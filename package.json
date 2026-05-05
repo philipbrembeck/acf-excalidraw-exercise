@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "excalidraw-monorepo",
-  "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319",
+  "packageManager": "pnpm@11.0.5+sha512.94fa09e72016402aefce788e46994e18eb1922998b16b6fd5aa6bafd8ae4dea05d0852f60247fdb7d5ab8199a7b0beda830398f3f80cb9f822398522a1535481",
   "workspaces": [
     "excalidraw-app",
     "packages/*",
@@ -88,15 +88,5 @@
     "rm:build": "rimraf --glob excalidraw-app/build excalidraw-app/dist excalidraw-app/dev-dist packages/*/dist packages/*/build examples/*/build examples/*/dist",
     "rm:node_modules": "rimraf --glob node_modules excalidraw-app/node_modules packages/*/node_modules examples/*/node_modules dev-docs/node_modules",
     "clean-install": "pnpm run rm:node_modules && pnpm install"
-  },
-  "pnpm": {
-    "overrides": {
-      "strip-ansi": "6.0.1"
-    },
-    "onlyBuiltDependencies": [
-      "core-js",
-      "esbuild",
-      "protobufjs"
-    ]
   }
 }

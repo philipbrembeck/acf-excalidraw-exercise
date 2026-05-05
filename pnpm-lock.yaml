@@ -228,6 +228,15 @@ importers:
       '@excalidraw/math':
         specifier: workspace:0.18.0
         version: link:../math
+      perfect-freehand:
+        specifier: 1.2.0
+        version: 1.2.0
+      points-on-curve:
+        specifier: 1.0.1
+        version: 1.0.1
+      roughjs:
+        specifier: 4.6.4
+        version: 4.6.4
 
   packages/excalidraw:
     dependencies:
@@ -335,7 +344,7 @@ importers:
         version: 1.51.0
       tunnel-rat:
         specifier: 0.1.2
-        version: 0.1.2(@types/react@19.0.10)(immer@9.0.21)(react@19.0.0)
+        version: 0.1.2(@types/react@19.0.10)(react@19.0.0)
     devDependencies:
       '@size-limit/preset-big-lib':
         specifier: 9.0.0
@@ -2711,6 +2720,7 @@ packages:
   '@xmldom/xmldom@0.8.12':
     resolution: {integrity: sha512-9k/gHF6n/pAi/9tqr3m3aqkuiNosYTurLLUtc7xQ9sxB/wm7WPygCv8GYa6mS0fLJEHhqMC1ATYhz++U/lRHqg==}
     engines: {node: '>=10.0.0'}
+    deprecated: this version has critical issues, please update to the latest version
 
   '@xtuc/ieee754@1.2.0':
     resolution: {integrity: sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA==}
@@ -4223,9 +4233,6 @@ packages:
 
   image-blob-reduce@3.0.1:
     resolution: {integrity: sha512-/VmmWgIryG/wcn4TVrV7cC4mlfUC/oyiKIfSg5eVM3Ten/c1c34RJhMYKCWTnoSMHSqXLt3tsrBR4Q2HInvN+Q==}
-
-  immer@9.0.21:
-    resolution: {integrity: sha512-bc4NBHqOqSfRW7POMkHd51LvClaeMXpm8dx0e8oE2GORbq5aRK7Bxl4FyzVLdGtLmvLKL7BTDBG5ACQm4HWjTA==}
 
   immutable@4.3.8:
     resolution: {integrity: sha512-d/Ld9aLbKpNwyl0KiM2CT1WYvkitQ1TSvmRtkcV8FKStiDoA7Slzgjmb/1G2yhKM1p0XeNOieaTbFZmU1d3Xuw==}
@@ -10653,9 +10660,6 @@ snapshots:
     dependencies:
       pica: 7.1.1
 
-  immer@9.0.21:
-    optional: true
-
   immutable@4.3.8: {}
 
   import-fresh@3.3.1:
@@ -12309,9 +12313,9 @@ snapshots:
       tslib: 1.14.1
       typescript: 5.9.3
 
-  tunnel-rat@0.1.2(@types/react@19.0.10)(immer@9.0.21)(react@19.0.0):
+  tunnel-rat@0.1.2(@types/react@19.0.10)(react@19.0.0):
     dependencies:
-      zustand: 4.5.7(@types/react@19.0.10)(immer@9.0.21)(react@19.0.0)
+      zustand: 4.5.7(@types/react@19.0.10)(react@19.0.0)
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -12951,10 +12955,9 @@ snapshots:
       buffer-crc32: 0.2.13
       fd-slicer: 1.1.0
 
-  zustand@4.5.7(@types/react@19.0.10)(immer@9.0.21)(react@19.0.0):
+  zustand@4.5.7(@types/react@19.0.10)(react@19.0.0):
     dependencies:
       use-sync-external-store: 1.6.0(react@19.0.0)
     optionalDependencies:
       '@types/react': 19.0.10
-      immer: 9.0.21
       react: 19.0.0

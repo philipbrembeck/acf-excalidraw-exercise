@@ -64,6 +64,9 @@
   },
   "dependencies": {
     "@excalidraw/common": "workspace:0.18.0",
-    "@excalidraw/math": "workspace:0.18.0"
+    "@excalidraw/math": "workspace:0.18.0",
+    "perfect-freehand": "1.2.0",
+    "points-on-curve": "1.0.1",
+    "roughjs": "4.6.4"
   }
 }
