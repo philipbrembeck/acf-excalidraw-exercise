@@ -1,5 +1,10 @@
 {
   "extends": ["@excalidraw/eslint-config", "react-app"],
+  "settings": {
+    "react": {
+      "version": "19.0"
+    }
+  },
   "rules": {
     "import/order": [
       "warn",
@@ -18,14 +23,7 @@
     ],
     "import/no-anonymous-default-export": "off",
     "no-restricted-globals": "off",
-    "@typescript-eslint/consistent-type-imports": [
-      "error",
-      {
-        "prefer": "type-imports",
-        "disallowTypeAnnotations": false,
-        "fixStyle": "separate-type-imports"
-      }
-    ],
+    "@typescript-eslint/no-unused-vars": "off",
     "no-restricted-imports": [
       "error",
       {
@@ -39,5 +37,20 @@
         "allowReferrer": true
       }
     ]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "@typescript-eslint/consistent-type-imports": [
+          "error",
+          {
+            "prefer": "type-imports",
+            "disallowTypeAnnotations": false,
+            "fixStyle": "separate-type-imports"
+          }
+        ]
+      }
+    }
+  ]
 }

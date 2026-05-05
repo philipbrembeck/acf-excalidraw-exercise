@@ -2,9 +2,25 @@ packages:
   - excalidraw-app
   - packages/*
   - examples/*
-overrides:
-  strip-ansi: 6.0.1
 allowBuilds:
   core-js: true
   esbuild: true
   protobufjs: true
+  sharp: true
+supportedArchitectures:
+  os:
+    - current
+    - darwin
+    - linux
+  cpu:
+    - current
+    - x64
+    - arm64
+  libc:
+    - current
+    - glibc
+    - musl
+overrides:
+  strip-ansi: 6.0.1
+  '@typescript-eslint/eslint-plugin': 8.46.2
+  '@typescript-eslint/parser': 8.46.2
