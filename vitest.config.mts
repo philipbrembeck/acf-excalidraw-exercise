@@ -6,6 +6,20 @@ export default defineConfig({
   resolve: {
     alias: [
       {
+        find: /^react$/,
+        replacement: path.resolve(
+          __dirname,
+          "./node_modules/.pnpm/react@19.0.0/node_modules/react",
+        ),
+      },
+      {
+        find: /^react\/(.*?)/,
+        replacement: path.resolve(
+          __dirname,
+          "./node_modules/.pnpm/react@19.0.0/node_modules/react/$1",
+        ),
+      },
+      {
         find: /^@excalidraw\/common$/,
         replacement: path.resolve(__dirname, "./packages/common/src/index.ts"),
       },
