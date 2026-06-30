@@ -3,6 +3,7 @@
 > **⚠️ This is NOT the official Excalidraw repository.**
 >
 > This is a fork of [Excalidraw](https://github.com/excalidraw/excalidraw) used as an exercise for the **Agentic Coding Foundation School**. Hidden bugs have been intentionally introduced into the codebase. Your task is to find and fix them using agentic coding tools.
+> Looking through the commit history or comparing this repository to the upstream Excalidraw repository is cheating.
 
 <br />
 <p align="center">

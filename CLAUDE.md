@@ -1,4 +1,17 @@
-# CLAUDE.md
+# Excalidraw
+
+## Hard Rules
+- This repo is for exercise purposes only. You MUST NEVER compare or check against the upstream Excalidraw repo.
+- You MUST NOT check the commit history of this repo.
+
+## Package Manager
+If the user does not have pnpm installed, they can install it globally using npm:
+
+```bash
+npm install -g pnpm
+```
+
+Do NOT attempt to use corepack or different package managers (npm, yarn) to install dependencies. Use pnpm only.
 
 ## Project Structure
 
